@@ -42,6 +42,9 @@ public class PlayerControler : MonoBehaviour
             }
            
         }
+
+        
+
     }
 
     //up charge when collecting batteries
