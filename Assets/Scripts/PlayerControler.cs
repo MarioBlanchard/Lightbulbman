@@ -39,6 +39,8 @@ public class PlayerControler : MonoBehaviour
                 //Throw Food
                 Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
                 charge -= 1;
+                UIManager.GetInstance().UpdateAmmoCount(charge);
+
             }
            
         }
@@ -76,6 +78,7 @@ public class PlayerControler : MonoBehaviour
         {
             Destroy(other.gameObject);
             charge += 1;
+            UIManager.GetInstance().UpdateAmmoCount(charge);
         }
         
 
